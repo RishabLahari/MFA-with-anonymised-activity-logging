@@ -17,7 +17,7 @@ def send_otp_email(email, otp):
         text=f"Your OTP is: {otp}",
         category="OTP Email"
     )
-    client = mt.MailtrapClient(token="495272d364e9ebfcfb3a1c93eaf76268")
+    client = mt.MailtrapClient(token="APICODE")
     client.send(mail)
 
 # Generate random credentials database for testing
@@ -25,7 +25,7 @@ def generate_credentials(num_users):
     credentials = []
     uname = 'Rishab'
     pword = '1234'
-    em = 'rishablahari01@gmail.com'
+    em = 'XYZ@gmail.com'
     credentials.append({'username': uname, 'password': pword, 'email': em})
     for i in range(num_users):
         username = f'User{i+1}'
