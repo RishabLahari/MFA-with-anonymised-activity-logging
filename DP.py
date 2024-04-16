@@ -30,7 +30,7 @@ def generate_credentials(num_users):
     for i in range(num_users):
         username = f'User{i+1}'
         password = f'Password{i+1}'
-        email = f'rishablahari01@gmail.com'
+        email = f'email{i+1}@gmail.com'
         credentials.append({'username': username, 'password': password, 'email': email})
     return credentials
 
